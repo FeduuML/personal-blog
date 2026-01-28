@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin</title>
+  <link rel="stylesheet" href="/home-admin.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+</head>
+<body>
+  <main class="container">
+    <div class="title-header">
+      <h1>Personal blog</h1>
+      <a href="/new" class="add-button" title="Create">
+        <i class="fa-solid fa-plus"></i>
+      </a>
+    </div>
+    <section class="posts">
+      <% articles.forEach(article => { %>
+        <article class="post">
+          <div class="post-header">
+            <h2 class="post-title">
+              <a href="/article/<%= article.id %>"><%= article.title %></a>
+            </h2>
+
+            <div class="post-actions">
+              <a href="/edit/<%= article.id %>" class="edit-button" title="Edit">
+                <i class="fa-solid fa-pen-to-square"></i>
+              </a>
+
+              <form method="post" action="/delete/<%= article.id %>">
+                <button type="submit" class="delete-button" title="Delete">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </article>
+      <% }) %>
+    </section>
+  </main>
+</body>
+</html>

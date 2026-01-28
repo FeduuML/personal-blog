@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="/home-admin.css" type="text/css">
+</head>
+<body>
+  <main class="container">
+    <div class="title-header">
+      <h1>Personal blog</h1>
+    </div>
+    <section class="posts">
+      <% articles.forEach(article => { %>
+        <article class="post">
+          <div class="post-header">
+            <h2 class="post-title">
+              <a href="/article/<%= article.id %>"><%= article.title %></a>
+            </h2>
+            <time class="post-date"><%= article.date %></time>
+          </div>
+        </article>
+      <% }) %>
+    </section>
+  </main>
+</body>
+</html>

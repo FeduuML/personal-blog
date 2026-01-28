@@ -1,0 +1,116 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: #f6f7f9;
+  margin: 0;
+}
+
+.container {
+  max-width: 700px;
+  margin: 1.5rem;
+  padding: 0 1rem;
+}
+
+.title-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+h1 {
+  margin-bottom: 2rem;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.post {
+  background: white;
+  padding: 1.25rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.05);
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 2.5rem;
+}
+
+.post-actions {
+  display: flex;
+  gap: .25rem;
+  flex-shrink: 0;
+}
+
+.post-actions form {
+  display: inline-flex;
+}
+
+.post-title {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.post-title a {
+  text-decoration: none;
+  color: #111;
+}
+
+.post-title a:hover {
+  text-decoration: underline;
+}
+
+.post-date {
+  display: block;
+  font-size: 1rem;
+  padding: .4rem .5rem;
+  color: #666;
+}
+
+.add-button,
+.edit-button,
+.delete-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  padding: .4rem .5rem;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.add-button {
+  color: green
+}
+
+.add-button:hover {
+  background: rgb(209, 255, 209)
+}
+
+.edit-button {
+  color: #2980b9;
+}
+
+.edit-button:hover {
+  background: rgba(41, 128, 185, 0.12);
+}
+
+.delete-button {
+  color: #c0392b;
+}
+
+.delete-button:hover {
+  background: rgba(192, 57, 43, 0.12);
+}
+
+p {
+  text-align: justify;
+}

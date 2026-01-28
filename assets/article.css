@@ -1,0 +1,45 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: #f6f7f9;
+  margin: 0;
+}
+
+.container {
+  max-width: 700px;
+  margin: 1.5rem;
+  padding: 0 1rem;
+}
+
+.title-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+h1 {
+  margin-bottom: 2rem;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.post {
+  background: white;
+  padding: 1.25rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.05);
+}
+
+.post-date {
+  display: block;
+  font-size: 1rem;
+  padding: .4rem .5rem;
+  color: #666;
+}
+
+p {
+  text-align: justify;
+}

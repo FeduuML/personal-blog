@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= article.title %></title>
+  <link rel="stylesheet" href="/article.css" type="text/css">
+</head>
+<body>
+  <main class="container">
+    <div class="title-header">
+      <h1><%= article.title %></h1>
+      <time class="post-date"><%= article.date %></time>
+    </div>
+    <section class="posts">
+      <article class="post">
+        <p><%= article.content %></p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
